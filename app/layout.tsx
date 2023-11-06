@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-page-custom-font */
-import "./styles/globals.scss";
-import "./styles/markdown.scss";
-import "./styles/highlight.scss";
-import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import { getClientConfig } from "./config/client";
+import "./styles/globals.scss";
+import "./styles/highlight.scss";
+import "./styles/markdown.scss";
 
 export const metadata: Metadata = {
-  title: "ChatGPT Next Web",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "Yolo Chat",
+  description: "我是Yolo, 你的专属私人助理.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "ChatGPT Next Web",
+    title: "Yolo Chat",
     statusBarStyle: "default",
   },
 };
