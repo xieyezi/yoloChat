@@ -9,7 +9,7 @@ import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
 import DragIcon from "../icons/drag.svg";
 import MaskIcon from "../icons/mask.svg";
-import YoloIcon from "../icons/yolo.svg";
+//import YoloIcon from "../icons/yolo.svg";
 //import PluginIcon from "../icons/plugin.svg";
 
 import Locale from "../locales";
@@ -149,9 +149,9 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-sub-title"]}>
           我是Yolo, 你的专属私人助理.
         </div>
-        <div className={styles["sidebar-logo"] + " no-dark"}>
+        {/*<div className={styles["sidebar-logo"] + " no-dark"}>
           <YoloIcon />
-        </div>
+        </div>*/}
       </div>
 
       <div className={styles["sidebar-header-bar"]}>
