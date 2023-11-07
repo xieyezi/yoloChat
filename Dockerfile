@@ -2,8 +2,6 @@ FROM node:18-alpine AS base
 
 FROM base AS deps
 
-RUN sed -i 's/https/http/' /etc/apk/repositories
-
 RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
@@ -14,6 +12,8 @@ RUN yarn config set registry 'https://registry.npmmirror.com/'
 RUN yarn install
 
 FROM base AS builder
+
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 
 RUN apk update && apk add --no-cache git
 

@@ -1,7 +1,7 @@
 {
-  "name": "chatgpt-next-web",
+  "name": "yolo-chat",
   "private": false,
-  "license": "mit",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "cross-env BUILD_MODE=standalone next build",
